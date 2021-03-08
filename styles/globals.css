@@ -14,3 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "cyberpunk";
+  src: url("/Cyberpunk-Regular.ttf");
+}
+
+#nprogress .bar {
+  background-color: #222;
+  background: #444;
+}
+#nprogress .bar .peg {
+  box-shadow: 0 0 10px #fff, 0 0 5px #fff;
+}
+#nprogress .spinner-icon {
+  border-top-color: #444;
+  border-left-color: #444;
+}
