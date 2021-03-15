@@ -6,6 +6,7 @@ import ParticleContainer from "./ParticleContainer";
 import { PageTransition } from "next-page-transitions";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import BottomNav from "./BottomNav";
 
 interface Props {}
 
@@ -71,7 +72,7 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
         >
           <Box
             // height={{, md: "fit" }}
-            minH={{ base: "100vh", md: "80vh" }}
+            height={{ base: "100vh", md: "80vh" }}
             backgroundColor="#222"
             zIndex="2"
             position="relative"
@@ -80,12 +81,14 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
             borderRadius={{ base: "none", md: "1rem" }}
             color="white"
             overflow="hidden"
+            pb={{ base: "5rem", md: "2rem" }}
           >
             <Nav />
 
             {props.children}
           </Box>
         </motion.div>
+        <BottomNav />
       </Box>
     </>
   );

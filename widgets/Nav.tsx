@@ -25,8 +25,9 @@ const Nav: React.FunctionComponent = (props) => {
       pb="2rem"
     >
       <Flex
-        basis="20%"
+        basis={{ base: "100%", md: "20%" }}
         align="center"
+        justify={{ base: "center", md: "flex-start" }}
         fontSize="1.8rem"
         fontFamily="cyberpunk"
         height="2.5rem"
@@ -45,7 +46,11 @@ const Nav: React.FunctionComponent = (props) => {
         ojan */}
         <CyberButton>Rojan</CyberButton>
       </Flex>
-      <Flex basis="40%" justify="flex-end">
+      <Flex
+        basis="40%"
+        justify="flex-end"
+        display={{ base: "none", md: "flex" }}
+      >
         <Link href="/">
           <NavItem>Home</NavItem>
         </Link>

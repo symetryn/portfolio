@@ -5,7 +5,7 @@ import Nav from "../widgets/Nav";
 import Intro from "../widgets/Intro";
 import ParticleContainer from "../widgets/ParticleContainer";
 import BaseLayout from "../widgets/BaseLayout";
-import PortfolioCard from "../widgets/PortfolioCard";
+import PortfolioCard from "../components/PortfolioCard";
 import React from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
@@ -42,12 +42,19 @@ export default function Portfolio() {
   return (
     <BaseLayout>
       <Grid
-        templateColumns="repeat(3, 1fr)"
+        templateColumns={{
+          base: "1fr",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
+        }}
         gap={6}
-        as={motion.ol}
+        as={motion.div}
         variants={container}
         initial="hidden"
         animate="show"
+        height={{ base: "78vh", md: "61vh" }}
+        p={{ base: " 1rem", md: "1.8rem" }}
+        overflow="auto"
       >
         {work.map((item, index) => {
           return (

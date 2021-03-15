@@ -1,9 +1,11 @@
-import { Flex, Box } from "@chakra-ui/layout";
-import { Image, Container, Heading, Text } from "@chakra-ui/react";
+import { Flex, Box, HStack } from "@chakra-ui/layout";
+import { Image, Container, Heading, Text, Button } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect/dist/core";
 import React, { useEffect, useRef } from "react";
 import GraphemeSplitter from "grapheme-splitter";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { DownloadIcon, ExternalLinkIcon, LinkIcon } from "@chakra-ui/icons";
 
 interface Props {}
 
@@ -39,8 +41,10 @@ const Intro: React.FunctionComponent<Props> = (props) => {
   return (
     <Container
       display={{ base: "block", md: "flex" }}
-      py="5rem"
+      pt="2.5rem"
+      pb="4rem"
       maxW="container.lg"
+      maxH="80vh"
     >
       <Box flexBasis="50%" minW="20rem">
         <motion.div
@@ -88,6 +92,28 @@ const Intro: React.FunctionComponent<Props> = (props) => {
             I am a Full Stack JavaScript developer with 2 years of experience
             creating real world Web applications.
           </Text>
+          <HStack pt="1rem" spacing="1rem">
+            <Link href="portfolio">
+              <Button
+                colorScheme="black"
+                variant="outline"
+                _hover={{ bg: "#fff", color: "#000" }}
+              >
+                Portfolio <ExternalLinkIcon ml="0.3rem" />
+              </Button>
+            </Link>
+            <Button
+              as="a"
+              href="/resume.pdf"
+              download
+              pl="1rem"
+              colorScheme="black"
+              variant="outline"
+              _hover={{ bg: "#fff", color: "#000" }}
+            >
+              <DownloadIcon mr="0.3rem" /> Resume
+            </Button>
+          </HStack>
         </motion.div>
       </Flex>
     </Container>

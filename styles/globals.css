@@ -31,3 +31,16 @@ a {
   border-top-color: #444;
   border-left-color: #444;
 }
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4rem;
+}
