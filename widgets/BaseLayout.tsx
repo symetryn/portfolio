@@ -19,7 +19,36 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Rojan Maharjan</title>
+        <meta name="title" content="Rojan Maharjan" />
+        <meta
+          name="description"
+          content="I am a Full Stack JavaScript developer with 2 years of experiencecreating real-world Web Applications."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="Rojan Maharjan" />
+        <meta
+          property="og:description"
+          content="I am a Full Stack JavaScript developer with 2 years of experiencecreating real-world Web Applications."
+        />
+        <meta
+          property="og:image"
+          content="https://rojanmaharjan.com.np/me.jpg"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="Rojan Maharjan" />
+        <meta
+          property="twitter:description"
+          content="I am a Full Stack JavaScript developer with 2 years of experiencecreating real-world Web Applications."
+        />
+        <meta
+          property="twitter:image"
+          content="https://rojanmaharjan.com.np/me.jpg"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
