@@ -103,7 +103,7 @@ export const work: PortfolioData[] = [
     features: ["Neumorphi UI", "Nepali Translation "],
   },
   {
-    name: "Porfolio Site",
+    name: "Portfolio Site",
     url: "http://rojanmaharjan.com.np/",
     description: "Portfolio webapps show casing my projects",
     image: {
