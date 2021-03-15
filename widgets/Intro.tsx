@@ -42,7 +42,7 @@ const Intro: React.FunctionComponent<Props> = (props) => {
     <Container
       display={{ base: "block", lg: "flex" }}
       p={{ base: "1rem", md: "2.5rem 4rem" }}
-      overflow="auto"
+      overflow={{ base: "auto", lg: "hidden" }}
       maxW="container.lg"
       maxH="80vh"
     >
