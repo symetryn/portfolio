@@ -8,6 +8,8 @@ import {
   TagLabel,
   TagRightIcon,
   Text,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
@@ -70,7 +72,12 @@ export const PortfolioCardExpand = ({ data }: Props) => {
             <Image fit="contain" width="100%" src={data.image.thumbnail} />
           </Box>
         </Box>
-        <Box flex="3" pl="1rem">
+        <Box
+          flex="3"
+          pl="1rem"
+          overflow="auto"
+          maxH={{ base: "45vh", md: "calc(80vh - 5rem)" }}
+        >
           <Heading as="h2" size="lg">
             {data.name}
           </Heading>
@@ -86,19 +93,16 @@ export const PortfolioCardExpand = ({ data }: Props) => {
           <Heading as="h3" size="md" pt="1rem" pb="0.5rem">
             Technology Used
           </Heading>
-          <HStack spacing={2}>
+          <Wrap spacing={2} boxSizing="border-box" overflow="hidden">
             {data?.tech?.map((item) => (
-              <Tag
-                size="md"
-                key={item.name}
-                variant="outline"
-                colorScheme="whiteAlpha"
-              >
-                <TagLabel>{item.name}</TagLabel>
-                {/* <TagRightIcon as={MdSettings} /> */}
-              </Tag>
+              <WrapItem key={item.name}>
+                <Tag size="md" variant="outline" colorScheme="whiteAlpha">
+                  <TagLabel>{item.name}</TagLabel>
+                  {/* <TagRightIcon as={MdSettings} /> */}
+                </Tag>
+              </WrapItem>
             ))}
-          </HStack>
+          </Wrap>
         </Box>
       </Flex>
     </Box>

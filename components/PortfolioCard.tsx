@@ -30,7 +30,7 @@ const item: Variants = {
 const Card = styled(Box)`
   background-color: "#333";
   border-radius: 1rem;
-  height: 20rem;
+
   width: 100%;
   padding: 1rem;
 
@@ -61,8 +61,7 @@ const Preview = styled.div`
 const CloseButton = styled(IconButton)`
   z-index: 100;
   position: fixed;
-  top: -1rem;
-  right: -1rem;
+
   background-color: black;
 `;
 
@@ -87,7 +86,7 @@ const PortfolioCard = ({ data }: Props) => {
         borderRadius="1rem"
         backgroundPosition="center top"
         backgroundSize="100% auto"
-        height="10rem"
+        height={{ base: "18rem", md: "20rem" }}
         width="100%"
         cursor="pointer"
         onClick={() => {
@@ -100,6 +99,8 @@ const PortfolioCard = ({ data }: Props) => {
               aria-label="Call Segun"
               size="sm"
               icon={<CloseIcon />}
+              top={{ base: 0, md: "-1rem" }}
+              right={{ base: 0, md: "-1rem" }}
               onClick={() => {
                 setActive(false);
               }}

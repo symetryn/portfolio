@@ -81,7 +81,12 @@ export const work: PortfolioData[] = [
       thumbnail: "/portfolioImages/linder.jpg",
       base: "/portfolioImages/linder.jpg",
     },
-    tech: [{ name: "Nextjs" }, { name: "React" }, { name: "Chakra UI" }],
+    tech: [
+      { name: "Nextjs" },
+      { name: "React" },
+      { name: "Chakra UI" },
+      { name: "Framer Motion" },
+    ],
 
     features: ["Easy to use", "Complete privacy as no server side is present"],
   },
@@ -96,5 +101,21 @@ export const work: PortfolioData[] = [
     },
     tech: [{ name: "Angular" }],
     features: ["Neumorphi UI", "Nepali Translation "],
+  },
+  {
+    name: "Porfolio Site",
+    url: "http://rojanmaharjan.com.np/",
+    description: "Portfolio webapps show casing my projects",
+    image: {
+      base: "/portfolioImages/portfolio.jpg",
+      thumbnail: "/portfolioImages/portfolio.jpg",
+    },
+    tech: [
+      { name: "Nextjs" },
+      { name: "React" },
+      { name: "Chakra UI" },
+      { name: "Framer Motion" },
+    ],
+    features: ["Custom Animation", "Statically generated SPA"],
   },
 ];

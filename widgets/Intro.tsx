@@ -40,13 +40,13 @@ const Intro: React.FunctionComponent<Props> = (props) => {
 
   return (
     <Container
-      display={{ base: "block", md: "flex" }}
-      pt="2.5rem"
-      pb="4rem"
+      display={{ base: "block", lg: "flex" }}
+      p={{ base: "1rem", md: "2.5rem 4rem" }}
+      overflow="auto"
       maxW="container.lg"
       maxH="80vh"
     >
-      <Box flexBasis="50%" minW="20rem">
+      <Box flexBasis="50%" minW={{ md: "20rem" }}>
         <motion.div
           initial={{ x: 80 }}
           animate={{
@@ -72,7 +72,12 @@ const Intro: React.FunctionComponent<Props> = (props) => {
         </motion.div>
       </Box>
 
-      <Flex justify="center" direction="column" flexBasis="50%">
+      <Flex
+        justify="center"
+        direction="column"
+        flexBasis="50%"
+        pt={{ base: "1rem", md: "0" }}
+      >
         <motion.div
           initial={{ x: 80 }}
           animate={{
