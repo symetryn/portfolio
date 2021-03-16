@@ -29,7 +29,7 @@ const Intro: React.FunctionComponent<Props> = (props) => {
       .typeString("Web Apps")
       .pauseFor(800)
       .deleteChars(4)
-      .typeString("Apis")
+      .typeString("APIs")
       .pauseFor(800)
       .deleteChars(10)
       .typeString("Games")

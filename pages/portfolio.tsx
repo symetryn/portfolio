@@ -6,8 +6,13 @@ import Intro from "../widgets/Intro";
 import ParticleContainer from "../widgets/ParticleContainer";
 import BaseLayout from "../widgets/BaseLayout";
 import PortfolioCard from "../components/PortfolioCard";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useCallback } from "react";
+import {
+  AnimationControls,
+  AnimationProps,
+  motion,
+  TargetAndTransition,
+} from "framer-motion";
 import { useRouter } from "next/router";
 import { work } from "../constants/work";
 
@@ -23,21 +28,36 @@ const container = {
 
 const listItem = {
   hidden: { opacity: 0 },
-  show: { opacity: 1 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+    },
+  },
+};
+
+const generateDelay = (index): TargetAndTransition => {
+  return {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: index * 0.2,
+    },
+  };
 };
 
 export default function Portfolio() {
   const router = useRouter();
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        ease: [0.6, -0.05, 0.01, 0.99],
-      },
-    },
-  };
+  // const container = {
+  //   hidden: { opacity: 0 },
+  //   show: {
+  //     opacity: 1,
+  //     transition: {
+  //       staggerChildren: 0.2,
+  //       ease: [0.6, -0.05, 0.01, 0.99],
+  //     },
+  //   },
+  // };
 
   return (
     <BaseLayout>
@@ -58,11 +78,13 @@ export default function Portfolio() {
       >
         {work.map((item, index) => {
           return (
-            <PortfolioCard
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={generateDelay(index)}
               key={item.name}
-              data={item}
-              index={index}
-            ></PortfolioCard>
+            >
+              <PortfolioCard data={item} index={index}></PortfolioCard>
+            </motion.div>
           );
         })}
         {/* <motion.li variants={item} />
