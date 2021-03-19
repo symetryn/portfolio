@@ -7,8 +7,8 @@ export const work: PortfolioData[] = [
     description:
       "Grace International, is a leading educational service provider established with the aim of delivering quality educational services. ",
     image: {
-      thumbnail: "/portfolioImages/grace.jpg",
-      base: "/portfolioImages/grace.jpg",
+      thumbnail: "https://ik.imagekit.io/symetryn/grace_8vuIcmO4sa.jpg",
+      base: "https://ik.imagekit.io/symetryn/grace_8vuIcmO4sa.jpg",
     },
     tech: [
       { name: "Nodejs" },
@@ -30,8 +30,8 @@ export const work: PortfolioData[] = [
     description:
       "Stay in farm is a platform for registering for farm stay programs in farms all over Nepal",
     image: {
-      thumbnail: "/portfolioImages/stayinfarm.jpg",
-      base: "/portfolioImages/stayinfarm.jpg",
+      thumbnail: "https://ik.imagekit.io/symetryn/stayinfarm_N5SdIH5FC.jpg",
+      base: "https://ik.imagekit.io/symetryn/stayinfarm_N5SdIH5FC.jpg",
     },
     tech: [
       { name: "Nodejs" },
@@ -53,8 +53,8 @@ export const work: PortfolioData[] = [
     description:
       "My Parikshya is a complete packaged solution availabe in both mobile and web platform for your exam preparation it helps you prepare for the real deal",
     image: {
-      base: "/portfolioImages/myparikshya.jpg",
-      thumbnail: "/portfolioImages/myparikshya.jpg",
+      base: "https://ik.imagekit.io/symetryn/myparikshya_QlC8zn_i0.jpg",
+      thumbnail: "https://ik.imagekit.io/symetryn/myparikshya_QlC8zn_i0.jpg",
     },
     tech: [
       { name: "Serverless Framework" },
@@ -78,8 +78,8 @@ export const work: PortfolioData[] = [
     description:
       "Linder is a is just what you expect tinder but for choosing dating spots",
     image: {
-      thumbnail: "/portfolioImages/linder.jpg",
-      base: "/portfolioImages/linder.jpg",
+      thumbnail: "https://ik.imagekit.io/symetryn/linder_2xHurPBV2g.jpg",
+      base: "https://ik.imagekit.io/symetryn/linder_2xHurPBV2g.jpg",
     },
     tech: [
       { name: "Nextjs" },
@@ -96,8 +96,8 @@ export const work: PortfolioData[] = [
     description:
       "A web app for updates about the status of novel covid 19 in different countries",
     image: {
-      base: "/portfolioImages/covidupdate.jpg",
-      thumbnail: "/portfolioImages/covidupdate.jpg",
+      base: "https://ik.imagekit.io/symetryn/covidupdate_7SfNGreK-.jpg",
+      thumbnail: "https://ik.imagekit.io/symetryn/covidupdate_7SfNGreK-.jpg",
     },
     tech: [{ name: "Angular" }],
     features: ["Neumorphi UI", "Nepali Translation "],
@@ -107,8 +107,8 @@ export const work: PortfolioData[] = [
     url: "http://rojanmaharjan.com.np/",
     description: "Portfolio webapps show casing my projects",
     image: {
-      base: "/portfolioImages/portfolio.jpg",
-      thumbnail: "/portfolioImages/portfolio.jpg",
+      base: "https://ik.imagekit.io/symetryn/portfolio_RAZC3rmmdt.jpg",
+      thumbnail: "https://ik.imagekit.io/symetryn/portfolio_RAZC3rmmdt.jpg",
     },
     tech: [
       { name: "Nextjs" },

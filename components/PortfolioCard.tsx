@@ -96,7 +96,7 @@ const PortfolioCard = ({ data }: Props) => {
         {active ? (
           <>
             <CloseButton
-              aria-label="Call Segun"
+              aria-label="Close button"
               size="sm"
               icon={<CloseIcon />}
               top={{ base: 0, md: "-1rem" }}
@@ -118,7 +118,7 @@ const PortfolioCard = ({ data }: Props) => {
               width="fit-content"
               fit="cover"
               objectPosition="top center"
-              src={data.image.base}
+              src={`${data.image.base}?tr=w-700`}
             />
           </>
         )}
