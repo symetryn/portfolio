@@ -35,7 +35,7 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
         />
         <meta
           property="og:image"
-          content="https://ik.imagekit.io/symetryn/rojan_oeB3EbRvZ.png"
+          content="https://ik.imagekit.io/symetryn/portfolio_RAZC3rmmdt.jpg"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
