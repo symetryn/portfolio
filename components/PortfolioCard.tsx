@@ -118,7 +118,7 @@ const PortfolioCard = ({ data }: Props) => {
               width="100%"
               fit="cover"
               objectPosition="top center"
-              src={`${data.image.base}?tr=w-700`}
+              src={`${data.image.base}?tr=w-320`}
             />
           </>
         )}
