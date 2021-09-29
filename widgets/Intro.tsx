@@ -64,7 +64,7 @@ const Intro: React.FunctionComponent<Props> = (props) => {
               bgColor="#444"
               objectPosition="top"
               objectFit="cover"
-              src="https://ik.imagekit.io/symetryn/me_JFIJEzVPmQ.jpg?tr=w-700"
+              src="https://ik.imagekit.io/symetryn/me_JFIJEzVPmQ.jpg?tr=w-320"
               alt="rojan image"
               borderRadius="50%"
             />
