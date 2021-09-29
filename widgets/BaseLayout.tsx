@@ -14,7 +14,7 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
   const router = useRouter();
 
   useEffect(() => {
-    console.log("mount");
+    console.log("Hey there :)");
   }, []);
   return (
     <>
