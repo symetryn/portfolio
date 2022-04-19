@@ -45,8 +45,14 @@ const Intro: React.FunctionComponent<Props> = (props) => {
       overflow={{ base: "auto", lg: "hidden" }}
       maxW="container.lg"
       maxH="80vh"
+      height={{ lg: "calc(80vh - 200px)" }}
     >
-      <Box flexBasis="50%" minW={{ md: "20rem" }}>
+      <Flex
+        justify="center"
+        align="center"
+        flexBasis="50%"
+        minW={{ md: "20rem" }}
+      >
         <motion.div
           initial={{ x: 80 }}
           animate={{
@@ -64,13 +70,13 @@ const Intro: React.FunctionComponent<Props> = (props) => {
               bgColor="#444"
               objectPosition="top"
               objectFit="cover"
-              src="https://ik.imagekit.io/symetryn/me_JFIJEzVPmQ.jpg?tr=w-320"
+              src="https://ik.imagekit.io/symetryn/rojan_JPZgRA8_E.jpg?tr=w-320"
               alt="rojan image"
               borderRadius="50%"
             />
           </Flex>
         </motion.div>
-      </Box>
+      </Flex>
 
       <Flex
         justify="center"
@@ -94,8 +100,8 @@ const Intro: React.FunctionComponent<Props> = (props) => {
             Rojan Maharjan
           </Heading>
           <Text pt="0.5rem">
-            I am a Full Stack JavaScript developer with 2 years of experience
-            creating real world Web applications.
+            I am a Full Stack JavaScript developer with 3 years of experience
+            creating real-world web applications.
           </Text>
           <HStack pt="1rem" spacing="1rem">
             <Link href="portfolio">

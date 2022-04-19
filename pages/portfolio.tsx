@@ -48,16 +48,6 @@ const generateDelay = (index): TargetAndTransition => {
 
 export default function Portfolio() {
   const router = useRouter();
-  // const container = {
-  //   hidden: { opacity: 0 },
-  //   show: {
-  //     opacity: 1,
-  //     transition: {
-  //       staggerChildren: 0.2,
-  //       ease: [0.6, -0.05, 0.01, 0.99],
-  //     },
-  //   },
-  // };
 
   return (
     <BaseLayout>
@@ -87,23 +77,7 @@ export default function Portfolio() {
             </motion.div>
           );
         })}
-        {/* <motion.li variants={item} />
-        <motion.li variants={item} /> */}
       </Grid>
     </BaseLayout>
   );
-  // return (
-  //   <BaseLayout>
-  //     <Heading as="h1" size="2xl">
-  //       My Work
-  //     </Heading>
-
-  //     {/* <Grid templateColumns="repeat(3, 1fr)" gap={6}>
-  //       {work.map((item, index) => {
-  //         return <PortfolioCard index={index}></PortfolioCard>;
-  //       })}
-  //     </Grid> */}
-
-  //   </BaseLayout>
-  // );
 }

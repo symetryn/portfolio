@@ -31,11 +31,11 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
         <meta property="og:title" content="Rojan Maharjan" />
         <meta
           property="og:description"
-          content="I am a Full Stack JavaScript developer with 2 years of experience creating real-world Web Applications."
+          content="I am a Full Stack JavaScript developer with 3 years of experience creating real-world web Applications."
         />
         <meta
           property="og:image"
-          content="https://ik.imagekit.io/symetryn/portfolio_RAZC3rmmdt.jpg"
+          content="https://ik.imagekit.io/symetryn/rojan_JPZgRA8_E.jpg"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -43,11 +43,11 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
         <meta property="twitter:title" content="Rojan Maharjan" />
         <meta
           property="twitter:description"
-          content="I am a Full Stack JavaScript developer with 2 years of experience creating real-world Web Applications."
+          content="I am a Full Stack JavaScript developer with 3 years of experience creating real-world web Applications."
         />
         <meta
           property="twitter:image"
-          content="https://rojanmaharjan.com.np/me.jpg"
+          content="https://ik.imagekit.io/symetryn/rojan_JPZgRA8_E.jpg"
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -100,7 +100,6 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
           }}
         >
           <Box
-            // height={{, md: "fit" }}
             height={{ base: "100vh", md: "80vh" }}
             backgroundColor="#222"
             zIndex="2"
