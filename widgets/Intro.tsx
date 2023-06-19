@@ -100,7 +100,7 @@ const Intro: React.FunctionComponent<Props> = (props) => {
             Rojan Maharjan
           </Heading>
           <Text pt="0.5rem">
-            I am a Full Stack JavaScript developer with 3 years of experience
+            I am a Full Stack JavaScript developer with 4 years of experience
             creating real-world web applications.
           </Text>
           <HStack pt="1rem" spacing="1rem">

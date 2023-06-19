@@ -23,7 +23,7 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
         <meta name="title" content="Rojan Maharjan" />
         <meta
           name="description"
-          content="I am a Full Stack JavaScript developer with 2 years of experience creating real-world Web Applications."
+          content="I am a Full Stack JavaScript developer with 4 years of experience creating real-world Web Applications."
         />
 
         <meta property="og:type" content="website" />
@@ -31,7 +31,7 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
         <meta property="og:title" content="Rojan Maharjan" />
         <meta
           property="og:description"
-          content="I am a Full Stack JavaScript developer with 3 years of experience creating real-world web Applications."
+          content="I am a Full Stack JavaScript developer with 4 years of experience creating real-world web Applications."
         />
         <meta
           property="og:image"
@@ -43,7 +43,7 @@ const BaseLayout: React.FunctionComponent = (props): ReactElement => {
         <meta property="twitter:title" content="Rojan Maharjan" />
         <meta
           property="twitter:description"
-          content="I am a Full Stack JavaScript developer with 3 years of experience creating real-world web Applications."
+          content="I am a Full Stack JavaScript developer with 4 years of experience creating real-world web Applications."
         />
         <meta
           property="twitter:image"
