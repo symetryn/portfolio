@@ -70,7 +70,7 @@ const Intro: React.FunctionComponent<Props> = (props) => {
               bgColor="#444"
               objectPosition="top"
               objectFit="cover"
-              src="https://ik.imagekit.io/symetryn/rojan_JPZgRA8_E.jpg?tr=w-320"
+              src="https://ik.imagekit.io/symetryn/portrait_G4H5rqotmV.png?tr=w-320"
               alt="rojan image"
               borderRadius="50%"
             />
